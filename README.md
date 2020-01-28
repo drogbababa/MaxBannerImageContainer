@@ -12,24 +12,31 @@ How to use:
 (使用方式：)
 
 1. Add it in your root build.gradle at the end of repositories:
-    	```allprojects {
-    		repositories {
-    			...
-    			maven { url 'https://jitpack.io' }
-    		}
-    	}```
+
+    ``` xml
+    allprojects {
+        repositories {
+            ...
+            maven { url 'https://jitpack.io' }
+        }
+    }
+    ```
     	
 2. Add the dependency
+
     ```implementation 'com.github.drogbababa:MaxBannerImageContainer:v1.1'```
 
 3. In Activity.xml
-    ```<com.drogbababa.maxbannerimagecontainer.MaxBannerImageContainer
+
+    ``` xml
+    <com.drogbababa.maxbannerimagecontainer.MaxBannerImageContainer
             android:id="@+id/max_banner_view"
             android:layout_width="300dp"
             android:layout_height="200dp"
             android:layout_marginLeft="20dp"
             app:radius="@dimen/radius11">
-       </com.drogbababa.maxbannerimagecontainer.MaxBannerImageContainer>```
+     </com.drogbababa.maxbannerimagecontainer.MaxBannerImageContainer>
+     ```
 
 4. In Java file
     - Extends MaxBannerBaseAdapter. [Adapter example](sample/src/main/java/com/drogbababa/maxbannerimagecontainer/ExampleImageAdapter.java)
