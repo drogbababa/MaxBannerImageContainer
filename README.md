@@ -16,6 +16,6 @@ How to use:
     		}
     	}
 2. Add the dependency
-    implementation 'com.github.drogbababa:MaxBannerImageContainer:Tag'
+    implementation 'com.github.drogbababa:MaxBannerImageContainer:1.1'
     
 Any bugs in use are welcome to issue~
