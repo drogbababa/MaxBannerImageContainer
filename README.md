@@ -1,9 +1,6 @@
 MaxBannerImageContainer
 =====
 
-[![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.github.bumptech.glide/glide/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.github.bumptech.glide/glide) [![Build Status](https://travis-ci.org/bumptech/glide.svg?branch=master)](https://travis-ci.org/bumptech/glide)
-| [View Glide's documentation][20] | [简体中文文档][22] | [Report an issue with Glide][5]
-
 MaxBannerImageContainer is a custom viewgroup that is animated the commonly hero display view used in Max + App. The effect is as follows:
 MaxBannerImageContainer是仿照Max+App中常用英雄展示控件制作的一个控件。效果如下:
 
