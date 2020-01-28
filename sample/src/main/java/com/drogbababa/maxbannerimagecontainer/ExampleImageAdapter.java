@@ -1,8 +1,8 @@
 package com.drogbababa.maxbannerimagecontainer;
 
-import android.util.Log;
 import android.view.View;
 import android.widget.ImageView;
+import android.widget.Toast;
 
 import java.util.List;
 
@@ -25,7 +25,7 @@ public class ExampleImageAdapter extends MaxBannerBaseAdapter<MaxBannerImageCont
         view.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Log.e("drogbababa", "example" + position);
+                Toast.makeText(v.getContext(), "example" + position, Toast.LENGTH_SHORT).show();
             }
         });
     }
