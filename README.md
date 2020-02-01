@@ -14,9 +14,10 @@ MaxBannerImageContainer is a custom viewgroup that is animated the commonly hero
   MaxBannerImageContainer handles showing and hiding item views itself, including touch event and animations.
 
 - v2.0
+
   MaxBannerImageContainer uses a ViewPager to contains item views, including handling touch event and flip animations.
 
-How to use:
+## How to use:
 
 (使用方式：)
 
@@ -61,4 +62,5 @@ How to use:
            }
        });
     ```
+    
 Any bugs in use are welcome to issue~
