@@ -7,6 +7,15 @@ MaxBannerImageContainer is a custom viewgroup that is animated the commonly hero
 
 ![](/show.gif)
 
+## Change Log
+
+- v1.1
+ 
+  MaxBannerImageContainer handles showing and hiding item views itself, including touch event and animations.
+
+- v2.0
+  MaxBannerImageContainer uses a ViewPager to contains item views, including handling touch event and flip animations.
+
 How to use:
 
 (使用方式：)
@@ -24,7 +33,7 @@ How to use:
     	
 2. Add the dependency
 
-    ```implementation 'com.github.drogbababa:MaxBannerImageContainer:v1.1'```
+    ```implementation 'com.github.drogbababa:MaxBannerImageContainer:v2.0'```
 
 3. In Activity.xml
 
@@ -39,7 +48,17 @@ How to use:
      ```
 
 4. In Java file
-    - Extends MaxBannerBaseAdapter. [Adapter example](sample/src/main/java/com/drogbababa/maxbannerimagecontainer/ExampleImageAdapter.java)
-    - set Adapter to maxbannerimagecontainer. [Activity example](sample/src/main/java/com/drogbababa/maxbannerimagecontainer/MainActivity.java)
+    - Directly use or extends MaxBaseItem to save data. [getViewPagerDatas()](sample/src/main/java/com/drogbababa/maxbannerimagecontainer/MainActivity.java)
+    - set List<MaxBaseItem> to MaxBannerImageContainer. [onCreate()](sample/src/main/java/com/drogbababa/maxbannerimagecontainer/MainActivity.java)
     
+    ```
+       MaxBannerImageContainer maxBannerImageContainer = findViewById(R.id.max_banner_view);
+       maxBannerImageContainer.setData(getViewPagerDatas());
+       maxBannerImageContainer.setOnItemClickListener(new MaxBannerImageContainer.OnItemClickListener() {
+           @Override
+           public void onItemClick(View view, int position) {
+               Toast.makeText(MainActivity.this, "position " + position, Toast.LENGTH_SHORT).show();
+           }
+       });
+    ```
 Any bugs in use are welcome to issue~
